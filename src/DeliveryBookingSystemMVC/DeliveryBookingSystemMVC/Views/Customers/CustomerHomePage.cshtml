@@ -1,0 +1,152 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@*<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container">
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Bookings" asp-action="Create">Add Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Customers" asp-action="RequestList">Request List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Customers" asp-action="AcceptedList">Accepted List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Customers" asp-action="RejectedList">Rejected List</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Customers" asp-action="Login">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>*@
+@*<html>
+<head>*@
+<h1>Customer HomePage</h1>
+    <div class="text-right">
+        <a class="btn btn-outline-info" asp-controller="Customers" asp-action="Login">Logout</a>
+    </div>
+    @*<meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>
+                body {
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+
+                .flip-box {
+                    background-color: transparent;
+                    width: 300px;
+                    height: 200px;
+                    border: 1px solid #f1f1f1;
+                    perspective: 1000px;
+                }
+
+                .flip-box-inner {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    transition: transform 0.8s;
+                    transform-style: preserve-3d;
+                }
+
+                .flip-box:hover .flip-box-inner {
+                    transform: rotateY(180deg);
+                }
+
+                .flip-box-front, .flip-box-back {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+                }
+
+                .flip-box-front {
+                    background-color: #bbb;
+                    color: black;
+                }
+
+                .flip-box-back {
+                    background-color: dodgerblue;
+                    color: white;
+                    transform: rotateY(180deg);
+                }
+            </style>
+        </head>
+        <body>
+            <h1>Customer HomePage</h1>
+
+            <div class="flip-box">
+                <div class="flip-box-inner text-center">
+                    <div class="flip-box-front">
+                        <h2> New Booking</h2>
+                    </div>
+                    <div class="flip-box-back">
+                        <a class="btn btn-dark" asp-controller="Bookings" asp-action="Create">Add</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-box text-right">
+                <div class="flip-box-inner text-center">
+                    <div class="flip-box-front">
+                        <h2> Request List</h2>
+                    </div>
+                    <div class="flip-box-back">
+                        <a class="btn btn-dark" asp-controller="Customers" asp-action="RequestList">View Request List</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-box">
+                <div class="flip-box-inner text-center">
+                    <div class="flip-box-front">
+                        <h2>Accepted List </h2>
+                    </div>
+                    <div class="flip-box-back">
+                        <a class="btn btn-dark" asp-controller="Customers" asp-action="AcceptedList">View Accepted List</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-box ">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front text-center">
+                        <h2> Rejected List</h2>
+                    </div>
+                    <div class="flip-box-back">
+                        <a class="btn btn-dark" asp-controller="Customers" asp-action=" RejectedList">View  Rejected List</a>
+                    </div>
+                </div>
+            </div>*@
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">New Booking</h5>
+            <a class="btn btn-dark" asp-controller="Bookings" asp-action="Create">Add</a>
+        </div>
+    </div>
+    <div class="card"  style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Request List</h5>
+            <a class="btn btn-dark" asp-controller="Customers" asp-action="RequestList">Open</a>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Accepted List</h5>
+            <a class="btn btn-dark" asp-controller="Customers" asp-action="AcceptedList">Open</a>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Rejected List</h5>
+            <a class="btn btn-dark" asp-controller="Customers" asp-action="RejectedList">Open</a>
+        </div>
+    </div>
+    @*</body>
+</html>*@
+
